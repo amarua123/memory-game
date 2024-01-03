@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'memory';
+  cardNo = 6
+  isSix = true
+  toggle(){
+    if(this.cardNo == 6){
+      this.cardNo = 12
+      this.isSix = false
+    }else{
+      this.cardNo = 6
+      this.isSix = true
+    }
+  }
 }

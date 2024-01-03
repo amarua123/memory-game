@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="card" *ngFor="let card of photosLocs; let i = index" (click)="handleClick(i)" [class.revealed]="revealed[i]">
+        <img *ngIf="revealed[i]" [src]="card" alt="Card">
+        <div class="card-content">
+          <h2 *ngIf="!revealed[i]" style="text-align: center;">Card {{i+1}}</h2>
+        </div>
+    </div>
+</div>
+<div class="scores">
+  <h2>Moves: {{moves}}</h2>
+  <h2>Misses: {{misses}}</h2>
+</div>
+
