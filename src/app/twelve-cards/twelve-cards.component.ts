@@ -32,7 +32,7 @@ export class TwelveCardsComponent {
     }
   }
   getPhoto(str:string){
-    return "./assets/images/"+str+".png";
+    return "assets/images/"+str+".png";
   }
 
   handleClick(index: number): void {

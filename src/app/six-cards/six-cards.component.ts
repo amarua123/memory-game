@@ -33,7 +33,7 @@ export class SixCardsComponent implements OnInit{
     }
   }
   getPhoto(str:string){
-    return "./assets/images/"+str;
+    return "assets/images/"+str;
   }
 
   handleClick(index: number): void {
